@@ -28,17 +28,41 @@
                                     <constraint firstAttribute="width" constant="90" id="KoA-kP-H87"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIRACLE PILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPK-Q5-Qc6">
+                                <rect key="frame" x="110.5" y="130" width="154" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5rG-rg-Wpb"/>
+                                    <constraint firstAttribute="width" constant="154" id="dKv-Zc-tsw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f00-TA-CzS">
+                                <rect key="frame" x="166" y="161" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="Vbb-6k-B6y"/>
+                                    <constraint firstAttribute="height" constant="21" id="cBV-wc-XMh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CrZ-vQ-LtO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lh0-Oy-sj3"/>
+                            <constraint firstItem="kPK-Q5-Qc6" firstAttribute="top" secondItem="CrZ-vQ-LtO" secondAttribute="bottom" constant="10" id="Q6e-fI-1tb"/>
+                            <constraint firstItem="f00-TA-CzS" firstAttribute="top" secondItem="kPK-Q5-Qc6" secondAttribute="bottom" constant="10" id="VYI-CZ-FOW"/>
+                            <constraint firstItem="f00-TA-CzS" firstAttribute="centerX" secondItem="kPK-Q5-Qc6" secondAttribute="centerX" id="jbm-6s-Kw6"/>
                             <constraint firstItem="CrZ-vQ-LtO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="oLd-U2-5pz"/>
+                            <constraint firstItem="kPK-Q5-Qc6" firstAttribute="centerX" secondItem="CrZ-vQ-LtO" secondAttribute="centerX" id="wVH-MY-YyK"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="135.19999999999999" y="138.0809595202399"/>
         </scene>
     </scenes>
     <resources>
