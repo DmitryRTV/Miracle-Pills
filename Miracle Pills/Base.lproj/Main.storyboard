@@ -114,12 +114,17 @@
                                     <constraint firstAttribute="width" constant="125" id="Ofx-X6-Ace"/>
                                 </constraints>
                                 <state key="normal" title="Choose your state"/>
+                                <connections>
+                                    <action selector="stateBtmPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sK9-a1-eZi"/>
+                                </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVc-MP-Den">
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVc-MP-Den">
                                 <rect key="frame" x="55" y="405" width="265" height="131"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="131" id="5h6-oK-QAR"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="131" id="Ngy-JA-IGa"/>
                                     <constraint firstAttribute="width" constant="265" id="Sby-bc-qOh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="265" id="que-ZU-dt6"/>
                                 </constraints>
                             </pickerView>
                         </subviews>
@@ -147,6 +152,7 @@
                             <constraint firstItem="f00-TA-CzS" firstAttribute="top" secondItem="kPK-Q5-Qc6" secondAttribute="bottom" constant="10" id="VYI-CZ-FOW"/>
                             <constraint firstItem="qvY-9K-A0U" firstAttribute="leading" secondItem="h0m-gI-4yM" secondAttribute="leading" id="X1r-4L-WJf"/>
                             <constraint firstItem="ed3-kk-TJk" firstAttribute="leading" secondItem="j40-Fi-XLC" secondAttribute="leading" id="Zsb-hy-l0q"/>
+                            <constraint firstItem="HVc-MP-Den" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bIR-3Y-ROq"/>
                             <constraint firstItem="CBS-ol-uNG" firstAttribute="top" secondItem="ed3-kk-TJk" secondAttribute="bottom" constant="8" id="dZk-er-1eE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="j40-Fi-XLC" secondAttribute="trailing" constant="20" id="fK6-u2-vpy"/>
                             <constraint firstItem="nrB-6E-pw0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="fey-ma-3WT"/>
@@ -154,6 +160,7 @@
                             <constraint firstItem="HVc-MP-Den" firstAttribute="top" secondItem="qvY-9K-A0U" secondAttribute="bottom" constant="8" id="ibg-mz-eHu"/>
                             <constraint firstItem="f00-TA-CzS" firstAttribute="centerX" secondItem="kPK-Q5-Qc6" secondAttribute="centerX" id="jbm-6s-Kw6"/>
                             <constraint firstItem="CBS-ol-uNG" firstAttribute="centerX" secondItem="ed3-kk-TJk" secondAttribute="centerX" id="nu5-rn-drR"/>
+                            <constraint firstItem="HVc-MP-Den" firstAttribute="top" secondItem="qvY-9K-A0U" secondAttribute="bottom" constant="8" id="oKL-HZ-FlI"/>
                             <constraint firstItem="CrZ-vQ-LtO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="oLd-U2-5pz"/>
                             <constraint firstItem="j40-Fi-XLC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ovQ-4Y-iHj"/>
                             <constraint firstItem="81z-OV-B2Q" firstAttribute="top" secondItem="nrB-6E-pw0" secondAttribute="bottom" constant="8" id="td5-dE-W0I"/>
@@ -161,6 +168,10 @@
                             <constraint firstItem="kPK-Q5-Qc6" firstAttribute="centerX" secondItem="CrZ-vQ-LtO" secondAttribute="centerX" id="wVH-MY-YyK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="statePicker" destination="HVc-MP-Den" id="cRt-gc-huo"/>
+                        <outlet property="statePickerBtm" destination="qvY-9K-A0U" id="laI-jf-IMl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
