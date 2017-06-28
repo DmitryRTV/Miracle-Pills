@@ -14,6 +14,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var statePickerBtm: UIButton!
     @IBOutlet weak var doneBnt: UIButton!
     @IBOutlet weak var buyBtn: UIButton!
+    @IBOutlet weak var finalImage: UIImageView!
+    @IBOutlet weak var coverView: UIView!
     
     let states = ["Alaska",
     "Alabama",
@@ -100,7 +102,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     @IBAction func buyBtn(_ sender: Any) {
-        print("purchesed")
+        finalImage.isHidden = false
+    coverView.isHidden = false
 
     }
     
