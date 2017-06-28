@@ -91,10 +91,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     @IBAction func stateBtmPressed(_ sender: Any) {
         statePicker.isHidden = false
+        doneBnt.isHidden = false
     }
     
     @IBAction func doneBtnPressed(_ sender: Any) {
         statePicker.isHidden = true
+        doneBnt.isHidden = true
     }
     
     
