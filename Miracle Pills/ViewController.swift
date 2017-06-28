@@ -16,6 +16,20 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var buyBtn: UIButton!
     @IBOutlet weak var finalImage: UIImageView!
     @IBOutlet weak var coverView: UIView!
+    @IBOutlet weak var miraclePillEmiji: UIImageView!
+    @IBOutlet weak var MiraclePillsLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var Devider: UIView!
+    @IBOutlet weak var fullNameLabel: UILabel!
+    @IBOutlet weak var enterYourName: UITextField!
+    @IBOutlet weak var streetAdressLabel: UILabel!
+    @IBOutlet weak var stateLabel: UILabel!
+    @IBOutlet weak var enterYourAddress: UITextField!
+    @IBOutlet weak var buyImage: UIImageView!
+    @IBOutlet weak var backRound: UIImageView!
+    @IBOutlet weak var helloWorldImage: UIImageView!
+    @IBOutlet weak var topToStartBtn: UIButton!
+    
     
     let states = ["Alaska",
     "Alabama",
@@ -93,7 +107,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     @IBAction func stateBtmPressed(_ sender: Any) {
         statePicker.isHidden = false
-        doneBnt.isHidden = false
+        
     }
     
     @IBAction func doneBtnPressed(_ sender: Any) {
@@ -107,6 +121,25 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     }
     
+    
+    @IBAction func topToBuyBtnPressed(_ sender: Any) {
+        miraclePillEmiji.isHidden = false
+        MiraclePillsLabel.isHidden = false
+        amountLabel.isHidden = false
+        Devider.isHidden = false
+        fullNameLabel.isHidden = false
+        enterYourName.isHidden = false
+        streetAdressLabel.isHidden = false
+        stateLabel.isHidden = false
+        enterYourAddress.isHidden = false
+        statePickerBtm.isHidden = false
+        buyBtn.isHidden = false
+        doneBnt.isHidden = false
+        buyImage.isHidden = false
+        helloWorldImage.isHidden = true
+        backRound.isHidden = true
+        topToStartBtn.isHidden = true
+    }
     
     
     
@@ -122,6 +155,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         statePickerBtm.setTitle(states[row], for: UIControlState.normal)
-    }
+        doneBnt.isHidden = false    }
 }
 
