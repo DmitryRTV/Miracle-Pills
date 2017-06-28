@@ -99,6 +99,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         doneBnt.isHidden = true
     }
     
+    @IBAction func buyBtn(_ sender: Any) {
+        print("purchesed")
+
+    }
+    
     
     
     
